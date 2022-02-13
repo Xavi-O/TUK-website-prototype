@@ -1,0 +1,196 @@
+html, body {
+    border: 0;
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
+    text-align: center;
+    font-family: 'Montserrat';
+  }
+  h4{
+    color: goldenrod;
+  }
+  h1{
+    color: mediumblue;
+  }
+  a{
+    color: teal;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  menu{
+    display: flex;
+    font-size: small;
+    text-align: left;
+  }
+  menu div{
+    margin-left: 8%;
+}
+menu div p a{
+    color: teal;
+    text-decoration: none;
+    border-radius: 5px;
+}
+menu div p a:hover{
+    font-weight: bolder;
+}
+.menu{
+    position: relative;
+    display: block;
+}
+.active{
+    font-weight: bolder;
+}
+.active nav{
+    width: 120%;
+}
+nav{
+    background-color: teal;
+    width: 0;
+    margin-bottom: -15px;
+    height: 4px;
+    transition: width .5s ease-in-out;
+}
+.menu:hover nav{
+    width: 120%;
+}
+.submenu ul{
+    padding: 0;
+}
+.submenu ul a{
+    display: block;
+    padding-left: 10%;
+    color: white;
+    line-height: 50px;
+    text-decoration: none;
+}
+.submenu ul a:hover{
+    font-weight: bolder;
+    background-color: rgba(0, 128, 128, 0.5);
+}
+.submenu{
+    width: 200px;
+    display: none;
+    margin-left: -10px;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    z-index: 2;
+}
+.menu:hover .submenu{
+    display: block;
+}
+.active:hover .submenu{
+    display: block;
+}
+#slideshow{
+  height: 250px;
+  background-size: auto 100%;
+  animation: slideshows 20s ease-in-out infinite alternate;
+}
+@keyframes slideshows{
+  0%{background-image: url(images/slide1.jpg);}
+  50%{background-image: url(images/slide2.jpg);}
+  100%{background-image: url(images/slide3.jpg);}
+}
+a em{
+  text-decoration: underline;
+  font-style: normal;
+}
+a em:hover{
+  color: red;
+  font-weight: bolder;
+}
+#details{
+  background-image: linear-gradient(to right, dodgerblue , greenyellow );
+  border-radius: 5px;
+}
+#details img{
+  width: 100%;
+}
+footer{
+  position: fixed;
+  color: white;
+  font-size: 13px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#studentloginpage, #staffloginpage{
+  display: none;
+  width: 100%;
+  margin: auto;
+  line-height: 30px;
+  background-image: linear-gradient(to bottom , azure, yellowgreen);
+  border-radius: 50px;
+}
+#admissions{
+  display: none;
+  background-color: azure;
+}
+table {
+  table-layout: fixed ;
+  line-height: 40px;
+  width: 100% ;
+}
+td , th{
+  width: 25% ;
+  border-style: ridge;
+}
+#admissions table tr td a{
+  font-size: xx-small;
+  text-decoration: underline;
+}
+#sloginform, #staffloginform{
+  margin: 50px;
+  line-height: 40px;
+}
+#contactpage{
+  display: none;
+  line-height: 50px;
+  background-image: linear-gradient(to bottom, white, teal);
+}
+#bottom{
+  line-height: 30px;
+  margin-bottom: 50px;
+  background-image: linear-gradient(to bottom, silver, grey, black);
+}
+#social img{
+  width: 40px;
+  border-radius: 8px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+}
+#social img:hover{
+  animation: vibrate .5s linear forwards;
+}
+@keyframes vibrate {
+  0%{transform: rotate(10deg);}
+  10%{transform: rotate(-10deg);}
+  20%{transform: rotate(10deg);}
+  30%{transform: rotate(-10deg);}
+  40%{transform: rotate(10deg);}
+  50%{transform: rotate(-10deg);}
+  60%{transform: rotate(10deg);}
+  70%{transform: rotate(-10deg);}
+  80%{transform: rotate(10deg);}
+  90%{transform: rotate(-10deg);}
+  100%{transform: rotate(0deg);}
+}
+h5{
+  text-align: center;
+  font-size: larger;
+}
+#quicklink{
+  list-style-type: none;
+}
+#quicklink h5{
+  padding-right: 10%;
+}
+#quicklink li a{
+  padding-right: 10%;
+  color: white;
+}
+.mapouter{
+  padding-left: 6%;
+}

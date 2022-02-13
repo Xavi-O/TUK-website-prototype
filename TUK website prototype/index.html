@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Technical University of Kenya</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="newstyle.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <img id="logo" src="images/tuklogo.png" alt="logo">
+        <h4>THE TECHNICAL UNIVERSITY OF KENYA</h4>
+        <menu>
+            <div class="active" id="home"><p><a onclick="home()">Home<nav></nav></a></p></div>
+            <div class="menu" id="students">
+                <p><a>Students<nav></nav></a></p>
+                    <div class="submenu">
+                        <ul>
+                        <a onclick="students();studentportal()">Portal</a>
+                        <a onclick="students();admissions()">Admissions</a>
+                        <a onclick="students();studentportal();alert('You Must Login First!!!')">ClassList</a>
+                        <a onclick="students();feedback()">Feedback</a>
+                        </ul>
+                    </div>
+            </div>
+            <div class="menu" id="staff">
+                <p><a>Staff<nav></nav></a></p>
+                    <div class="submenu">
+                        <ul>
+                        <a onclick="staff();staffportal()">Staff Portal</a>
+                        <a onclick="alert('Please Login to our staff portal');staff();staffportal()">Lesson Attendance</a>
+                        </ul>
+                    </div>
+            </div>
+            <div class="menu" id="contacts"><p><a onclick="contacts()">Contacts<nav></nav></a></p></div>
+        </menu>
+    </header><hr>
+    <section id="homepage">
+        <h3><em>"Education and training for the real world"</em></h3>
+        <div id="slideshow"></div>
+        <a id="gallery"><em>View Gallery</em></a>
+        <h1>Mission, Vision and Values</h1>
+        <div id="details">
+            <img src="images/graduate.jpg">
+            <aside>
+                <h2>Vision</h2>
+                <p>
+                    To be a top rated University of technology
+                </p>
+                <h2>Mission</h2>
+                <p>
+                    To provide technological education and training and to contribute towards the 
+                    advancement of society through research and innovation
+                </p>
+                <h2>Motto</h2>
+                <p>
+                    Education and training for the real world
+                </p>
+                <a id="values"><em>Read More</em></em></a>
+            </aside>
+        </div>
+    </section>
+    <section id="studentloginpage">       
+        <form action="studentportal.php" method="post" id="sloginform">
+            <h1>Student Login</h1>
+            <label for="username">Username</label><br>
+            <input type="text" name="uname" id="uname"><br>
+            <label for="password">Password</label><br>
+            <input type="password" name="pword" id="pword"><br>
+            <input type="submit" value="Login">
+        </form>
+        <aside>
+            <h3>Welcome to the students portal</h3>
+            <p>
+                Your default login <u>username</u>  is <b style="color: red;">'student1'</b> . <br>
+                i.e. without any spaces or quatation marks. <br>
+                The default <u>password</u>  has been set to <b style="color: red;">'study'</b> and once you are logged
+                into the system, you will be able to view a list of registered users as students
+                of the system.
+            </p>
+        </aside>
+    </section>
+    <div id="admissions">
+        <h1>Admissions</h1>
+        <table>
+            <tr><th>Year</th><th>KUCCPS Students</th><th>module II Students</th></tr>
+            <tr>
+                <td>2020</td>
+                <td><a>Download list</a><br><a>Print Admission Letter and Joining Instructions</a></td>
+                <td><a>Download list</a><br><a>Print Admission Letter and Joining Instructions</a></td>
+            </tr>
+            <tr>
+                <td>2019</td>
+                <td><a>Download list</a><br><a>Print Admission Letter and Joining Instructions</a></td>
+                <td><a>Download list</a><br><a>Print Admission Letter and Joining Instructions</a></td>
+            </tr>
+            <tr>
+                <td>2018</td>
+                <td><a>Download list</a><br><a>Print Admission Letter and Joining Instructions</a></td>
+                <td><a>Download list</a><br><a>Print Admission Letter and Joining Instructions</a></td>
+            </tr>
+            <tr>
+                <td>2017</td>
+                <td><a>Download list</a><br><a>Print Admission Letter and Joining Instructions</a></td>
+                <td><a>Download list</a><br><a>Print Admission Letter and Joining Instructions</a></td>
+            </tr>
+            <tr>
+                <td>2016</td>
+                <td><a>Download list</a><br><a>Print Admission Letter and Joining Instructions</a></td>
+                <td><a>Download list</a><br><a>Print Admission Letter and Joining Instructions</a></td>
+            </tr>
+        </table>
+    </div>
+    <section id="staffloginpage">       
+        <form action="staffportal.php" method="post" id="staffloginform">
+            <h1>Staff Login</h1>
+            <label for="username">Username</label><br>
+            <input type="text" name="lecname" id="lecname"><br>
+            <label for="password">Password</label><br>
+            <input type="password" name="pword" id="pword"><br>
+            <input type="submit" value="Login">
+        </form>
+        <aside>
+            <h3>Welcome to the staff portal</h3>
+            <p>
+                The default <u>username</u>  is <b style="color: red;">'lecturer1'</b> . <br>
+                i.e. without any spaces or the quatation marks <br>
+                The default <u>password</u>  has been set to <b style="color: red;">'lec'</b>  and once you are logged
+                into the system, you can see this data of registered users as lecturers from the database displayed on the main page.
+            </p>
+        </aside>
+    </section>
+    <section id="contactpage">
+        <div id="contactlinks">
+            <h1>Contact us</h1>
+            <p>Telephone: +2547********</p>
+            <p>E-mail: ***@gmail.com</p>
+            <p>Facebook: ***</p>
+            <p>Twitter: @***</p>
+        </div>
+        <form action="feedback.php" method="post" id="contactform">
+            <h1>Write to us</h1>
+            <label for="name">Name</label><br>
+            <input type="text" name="name" id="name" size="50"><br>
+            <label for="password">E-Mail</label><br>
+            <input type="email" name="email" id="email" size="50"><br>
+            <label for="message">Message</label><br>
+            <textarea name="msg" id="msg" cols="50" rows="10"></textarea><br>
+            <input type="submit" value="Send">
+        </form>
+    </section>
+    <section id="bottom">
+        <div id="isologo">
+            <figure><img src="images/logo.png"></figure>
+            <h5>ISO Certification</h5>
+            <figure><img src="images/tuk-iso.png"></figure>       
+        </div>
+        <div id="social">
+            <h5>Social Networks</h5>
+            <a><img src="images/facebook.jpeg"></a>
+            <a><img src="images/twitter.jpeg"></a>
+            <a><img src="images/youtube.jpeg"></a>
+            <a><img src="images/mail.jpeg"></a>
+            <h5>Locate Us</h5>
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="350" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=the%20technical%20university%20of%20kenya&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                    </iframe><a href="https://123movies-to.org"></a><br>
+                    <style>.mapouter{position:relative;text-align:right;height:200px;width:350px;}</style>
+                    <a href="https://www.embedgooglemap.net">how to add a google map to my website</a>
+                    <style>.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:350px;}</style>
+                </div>
+            </div>
+        </div>
+        <ul id="quicklink">
+            <h5>Quick Links</h5>
+            <li><a>Library</a></li>
+            <li><a>Careers</a></li>
+            <li><a>E-Learning</a></li>
+            <li><a>Alumni</a></li>
+            <li><a>Downloads</a></li>
+            <li><a>Tenders</a></li>
+            <li><a>Sports</a></li>
+            <li><a>Research</a></li>
+            <li><a>Partners</a></li>
+        </ul>
+    </section>
+    <footer><p>©IBL Project 2021 
+    | This website is purely academic and none of the resources used are for commercial purposes</p></footer>
+    <script src="main.js"></script>
+</body>
+</html>
